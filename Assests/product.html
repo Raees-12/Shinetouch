@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Shinetouch MFG LLP</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="Symblic Logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Symblic Logo.png">
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="Full Logo.png" alt="Shinetouch MFG LLP">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="../index.html#products">Products</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+            <div class="gst-number">
+                GST: 27ABMFS8842Q1Z9
+            </div>
+            <div class="call-button">
+                <a href="tel:08047642743" class="nav-call-btn">
+                    <div class="call-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="call-text">
+                        <span class="phone-text">Call 08047642743</span>
+                        <span class="response-rate">95% Response Rate</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <div class="product-gallery" data-aos="fade-right">
+                <div class="main-image">
+                    <img src="" alt="Product Image" id="mainImage">
+                </div>
+                <div class="thumbnail-grid" id="thumbnailGrid">
+                    <!-- Thumbnails will be loaded dynamically -->
+                </div>
+            </div>
+
+            <div class="product-info" data-aos="fade-left">
+                <h1 id="productTitle"></h1>
+                <div class="product-category" id="productCategory"></div>
+                <div class="product-description" id="productDescription"></div>
+
+                <div class="product-features">
+                    <h3>Key Features</h3>
+                    <ul class="features-list" id="featuresList"></ul>
+                </div>
+
+                <div class="product-specifications">
+                    <h3>Technical Specifications</h3>
+                    <ul class="features-list" id="specsList"></ul>
+                </div>
+
+                <div class="product-cta">
+                    <a href="#" class="product-btn get-quote-btn"
+                        onclick="openWhatsAppInquiry(document.getElementById('productTitle').textContent)">
+                        Get Best Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="enquiry" class="contact">
+        <div class="section-container">
+            <h2>Request Quote</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Details</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+                    <p><i class="fas fa-phone"></i> +91-XXXXXXXXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@shinetouchmfg.com</p>
+                </div>
+                <form class="contact-form" id="enquiryForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                    <input type="text" name="product" id="productField" readonly>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="submit-btn">Send Enquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Full Logo.png" alt="Shinetouch MFG LLP">
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="../index.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="../index.html#products">Products</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p>Mumbai, India</p>
+                <p>Phone: +91-XXXXXXXXXX</p>
+                <p>Email: info@shinetouchmfg.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Shinetouch MFG LLP. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="products.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+    </script>
+</body>
+
+</html>
